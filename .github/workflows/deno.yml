@@ -32,8 +32,6 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 18.11.0
-      - name: Setup package.json
-        run: echo '{"name":"muesch/denotest","version":"0.0.0","publishConfig":{"access":"public"},"scripts":{"semantic-release":"semantic-release"},"repository":{"type":"git","url":"https://github.com/denorg/starter.git"},"author":"Denorg<hellp@den.org.in>","license":"MIT","bugs":{"url":"https://github.com/denorg/starter/issues"},"homepage":"https://denorg.github.io/starter/","devDependencies":{"semantic-release":"^21.0.6","semantic-release-gitmoji":"^1.6.4"}}' > package.json
       - name: Install dependencies
         run: npm install
       - name: Release
