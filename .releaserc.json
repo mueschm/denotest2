@@ -1,11 +1,17 @@
 {
+  "branches": [
+    "main"
+  ],
   "plugins": [
     [
       "semantic-release-gitmoji",
       {
         "releaseRules": {
           "patch": {
-            "include": [":bento:", ":recycle:"]
+            "include": [
+              ":bento:",
+              ":recycle:"
+            ]
           }
         }
       }
