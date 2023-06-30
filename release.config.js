@@ -85,7 +85,9 @@ const main_plugins = [
 // eslint-disable-next-line unicorn/prefer-module
 module.exports = {
   'branches': [
-    'main'
+    {
+      'name': 'main',
+    }
   ],
   plugins: branch === 'main' ? main_plugins : default_plugins,
 };
