@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/denorg/starter.git"
+    "url": "https://github.com/mueschm/denotes.git"
   },
   "author": "Denorg<hellp@den.org.in>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/denorg/starter/issues"
+    "url": "https://github.com/mueschm/denotes/issues"
   },
-  "homepage": "https://denorg.github.io/starter/",
+  "homepage": "https://github.com/mueschm/denotest",
   "devDependencies": {
     "semantic-release": "^21.0.6",
     "semantic-release-gitmoji": "^1.6.4"
