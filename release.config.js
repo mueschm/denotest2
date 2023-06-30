@@ -59,7 +59,7 @@ const github = [
   {
     "assets": [
       { "path": "./dist/windows/arcctl", "label": "Windows" },
-      { "path": "./dist/windows/arcctl", "label": "Linux" },
+      { "path": "./dist/linux/arcctl", "label": "Linux" },
       { "path": "./dist/osx-amd64/arcctl", "label": "OSX AMD64" },
       { "path": "./dist/osx-arm64/arcctl", "label": "OSX ARM64" },
     ]
