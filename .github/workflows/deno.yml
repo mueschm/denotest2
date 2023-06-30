@@ -6,6 +6,11 @@ on:
 jobs:
   release:
     name: Release
+    permissions:
+      contents: write # to be able to publish a GitHub release
+      issues: write # to be able to comment on released issues
+      pull-requests: write # to be able to comment on released pull requests
+      id-token: write # to enable use of OIDC for npm provenance
     runs-on: ubuntu-latest
     if: "!contains(github.event.head_commit.message, '[skip ci]')"
     steps:
@@ -17,6 +22,8 @@ jobs:
           node-version: 18.15.0
       - name: Install dependencies
         run: npm install
+      - name: RUN
+        run: echo ${{ secrets.GH_TOKEN }}
       - name: Release
         run: npx semantic-release --debug
         env:
