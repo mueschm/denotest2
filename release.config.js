@@ -53,10 +53,10 @@ const github = [
   '@semantic-release/github',
   {
     "assets": [
-      { "path": "./dist/windows/*", "name": "arcctl-windows.exe", "label": "Windows" },
-      { "path": "./dist/linux/*", "name": "arcctl-linux", "label": "Linux" },
-      { "path": "./dist/osx-amd64/*", "name": "arcctl-osx-amd64", "label": "OSX AMD64" },
-      { "path": "./dist/osx-arm64/*", "name": "arcctl-osx-arm64", "label": "OSX ARM64" },
+      { "path": "./dist/windows/*", "name": "arcctl-windows-${nextRelease.gitTag}.exe", "label": "Windows ${nextRelease.gitTag}" },
+      { "path": "./dist/linux/*", "name": "arcctl-linux-${nextRelease.gitTag}", "label": "Linux ${nextRelease.gitTag}" },
+      { "path": "./dist/osx-amd64/*", "name": "arcctl-osx-amd64-${nextRelease.gitTag}", "label": "OSX Aam64 ${nextRelease.gitTag}" },
+      { "path": "./dist/osx-arm64/*", "name": "arcctl-osx-arm64-${nextRelease.gitTag}", "label": "OSX Arm64 ${nextRelease.gitTag}" },
     ]
   }
 ];
