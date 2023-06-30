@@ -76,12 +76,16 @@ const backmerge = [
 ];
 
 const default_plugins = [
+  commitAnalyzer,
+  releaseNotesGenerator,
   changelog,
   git,
   github,
 ];
 
 const main_plugins = [
+  commitAnalyzer,
+  releaseNotesGenerator,
   changelog,
   git,
   github,
