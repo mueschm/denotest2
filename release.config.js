@@ -53,10 +53,10 @@ const github = [
   '@semantic-release/github',
   {
     "assets": [
-      { "path": "./dist/windows/arcctl", "label": "Windows" },
-      { "path": "./dist/linux/arcctl", "label": "Linux" },
-      { "path": "./dist/osx-amd64/arcctl", "label": "OSX AMD64" },
-      { "path": "./dist/osx-arm64/arcctl", "label": "OSX ARM64" },
+      { "path": "./dist/windows/*", "label": "Windows" },
+      { "path": "./dist/linux/*", "label": "Linux" },
+      { "path": "./dist/osx-amd64/*", "label": "OSX AMD64" },
+      { "path": "./dist/osx-arm64/*", "label": "OSX ARM64" },
     ]
   }
 ];
