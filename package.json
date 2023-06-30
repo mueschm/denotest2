@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mueschm/denotes.git"
+    "url": "https://github.com/mueschm/denotest.git"
   },
   "author": "Denorg<hellp@den.org.in>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mueschm/denotes/issues"
+    "url": "https://github.com/mueschm/denotest/issues"
   },
   "homepage": "https://github.com/mueschm/denotest",
   "devDependencies": {
