@@ -81,12 +81,12 @@ const backmerge = [
 ];
 
 const default_plugins = [
-  smeanticReleaseGitmoji,
+  //smeanticReleaseGitmoji,
   github,
 ];
 
 const main_plugins = [
-  smeanticReleaseGitmoji,
+  //smeanticReleaseGitmoji,
   github,
 ];
 
