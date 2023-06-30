@@ -38,12 +38,7 @@ const git = [
   {
     'assets': [
       'CHANGELOG.md',
-      'README.md',
       'package.json',
-      'package-lock.json',
-      'yarn.lock',
-      'architect-yml.md',
-      'src/dependency-manager/schema/architect.schema.json',
     ],
   },
 ];
@@ -81,12 +76,14 @@ const backmerge = [
 ];
 
 const default_plugins = [
-  //smeanticReleaseGitmoji,
+  changelog,
+  git,
   github,
 ];
 
 const main_plugins = [
-  //smeanticReleaseGitmoji,
+  changelog,
+  git,
   github,
 ];
 
