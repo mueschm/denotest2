@@ -1,36 +1,3 @@
-const { GIT_BRANCH: branch } = process.env;
-
-/*
-[
-    [
-      "semantic-release-gitmoji",
-      {
-        "releaseRules": {
-          "patch": {
-            "include": [
-              ":bento:",
-              ":recycle:"
-            ]
-          }
-        }
-      }
-    ],
-    "@semantic-release/github"
-  ]
-*/
-const smeanticReleaseGitmoji = [
-  "semantic-release-gitmoji",
-  {
-    "releaseRules": {
-      "patch": {
-        "include": [
-          ":bento:",
-          ":recycle:"
-        ]
-      }
-    }
-  }
-];
 const commitAnalyzer = '@semantic-release/commit-analyzer';
 const releaseNotesGenerator = '@semantic-release/release-notes-generator';
 const git = [
@@ -42,13 +9,6 @@ const git = [
     ],
   },
 ];
-const exec = [
-  '@semantic-release/exec',
-  {
-    'publishCmd': 'npm run pack',
-  },
-];
-const npm = '@semantic-release/npm';
 const github = [
   '@semantic-release/github',
   {
@@ -66,24 +26,8 @@ const changelog = [
     'changelogFile': 'CHANGELOG.md',
   },
 ];
-const backmerge = [
-  '@saithodev/semantic-release-backmerge',
-  {
-    'branches': ['rc'],
-    // Makes sure that only pushed changes are backmerged
-    'clearWorkspace': true,
-  },
-];
 
 const default_plugins = [
-  commitAnalyzer,
-  releaseNotesGenerator,
-  changelog,
-  git,
-  github,
-];
-
-const main_plugins = [
   commitAnalyzer,
   releaseNotesGenerator,
   changelog,
@@ -98,7 +42,7 @@ module.exports = {
       'name': 'main',
     }
   ],
-  plugins: branch === 'main' ? main_plugins : default_plugins,
+  plugins: default_plugins,
 };
 
 // eslint-disable-next-line unicorn/prefer-module
