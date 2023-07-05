@@ -1,5 +1,5 @@
 {
-  "name": "muesch/denotest",
+  "name": "muesch/denotest2",
   "version": "1.0.0",
   "publishConfig": {
     "access": "public"
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mueschm/denotest.git"
+    "url": "https://github.com/mueschm/denotest2.git"
   },
   "author": "Denorg<hellp@den.org.in>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mueschm/denotest/issues"
+    "url": "https://github.com/mueschm/denotest2/issues"
   },
-  "homepage": "https://github.com/mueschm/denotest",
+  "homepage": "https://github.com/mueschm/denotest2",
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^10.0.1",
